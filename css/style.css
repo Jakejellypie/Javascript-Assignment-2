@@ -1,0 +1,95 @@
+
+/* creating a greyscale filter for all thumbnails that will be toggled by gallery.js. */
+.greyscale{
+    filter: grayscale(80%);
+}
+
+/* creating a class that sets the border of the active thumbnail to be red, making it much more visible.*/
+.highlighted{
+    border: 2px solid red;
+}
+
+/* changing the cursor when hovering over the list items of the ul to indicate clickability */
+ul > li:hover{
+    cursor:pointer;
+}
+
+/* putting a custom font that I used for my own portfolio, I think it looks nice.*/
+@font-face {
+    font-family: "custom";
+    src: url(/fonts/TRJNDaVinci-Display.woff);
+}
+
+
+/* The rest of the CSS is purely cosmetical and has no relation to js */
+html{
+    font-family: custom;
+    background-color: aliceblue;
+}   
+
+body{
+    margin:0;
+}
+
+h1{
+    background: #fff1f1;
+    width: 100vw;
+    margin-top: 0;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0 0 3rem 3rem;
+    box-shadow: #000c 1px 1px 7px;
+    font-size: 48px;
+    color: #776d6d;
+    font-family: monospace;
+}
+
+figure > img{
+    border: 4px solid #4a6e62;
+    border-radius: 4rem;
+    width: 50%;
+    height: 50%;
+}
+
+ul{
+    display: flex;
+    width: 48rem;
+    margin: auto;
+    list-style: none;
+}
+
+li > img{
+    width: 80%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 2px solid #6a6161;
+}
+
+figure{
+    display: flex;
+    background-color: #edffcc87;
+    padding: 2rem;
+    justify-content: space-evenly;
+    border-radius: 4rem;
+    width: 50rem;
+    margin: 2rem;
+}
+
+figcaption{
+    font-size: 36px;
+    width: 21rem;
+    text-align: center;
+    transform: translateY(4rem);
+    text-shadow: black 1px 2px 2px;
+    font-style: italic;
+}
+
+#gallery{
+    box-shadow: black 0px 1px 6px;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 1px 0rem 2rem 0rem;
+    border-radius: 3rem;
+    background-color: #fff2de;
+}
+
